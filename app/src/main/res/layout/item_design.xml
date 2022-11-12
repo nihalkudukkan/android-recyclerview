@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imageview"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_android"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="190dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:text="Nihal K"
+                android:textColor="?attr/colorOnSecondary"
+                android:layout_gravity="center"
+                android:gravity="center|start"
+                style="@style/TextAppearance.AppCompat.Medium"/>
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="190dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:text="How are you"
+                android:layout_gravity="center"
+                android:gravity="center|start"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:gravity="end|center"
+            android:text="8:15 AM"/>
+        
+    </LinearLayout>
+
+</LinearLayout>
